@@ -68,7 +68,6 @@ void example_appendCharToPointer() {
     delete[] str;
 
     char * str2 = new char[10];
-    //str2[0] = 'h'; str2[1] = 'e'; str2[2] = 'l'; str2[3] = 'l'; str2[4] = 'o'; str2[5] = '\0';
     str2 = strcpy(str2,"hello");
     str2 = strPar::appendCharToPointerUnsafe(str2, 'a');
     assert(!strcmp(str2, "helloa"));
